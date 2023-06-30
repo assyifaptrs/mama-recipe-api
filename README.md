@@ -66,9 +66,8 @@ Take a look at the website's React JS code :
 
 [Mama Recipe App](https://github.com/assyifaptrs/mama-recipe-app)
 
-## Authors
+## Contact
 
-Get it touch with me :
+- My Email : muliaassyifa@gmail.com
 
-- [Github](https://www.github.com/assyifaptrs)
-- [Linkedin](https://www.linkedin.com/in/assyifa-putri)
+- Project Link : https://github.com/assyifaptrs/mama-recipe-api
