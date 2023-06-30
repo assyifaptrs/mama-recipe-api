@@ -41,11 +41,12 @@ Install Mama Recipe API with npm :
 
 - Setup .env
 ```
-  DB_HOST=
-  DB_USER=
-  DB_PASSWORD=
-  DB_NAME=
-  DB_PORT=
+  DB_HOSTNAME = 
+  DB_USERNAME = 
+  DB_PASSWORD = 
+  DB_NAME = 
+  PORT = 
+  JWT_SECRET =
 ```
 
 - Type  ```npm run dev``` To Start Development
