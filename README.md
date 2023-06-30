@@ -21,16 +21,35 @@ This API was built with some technologies below:
 
 Install Mama Recipe API with npm :
 
-After downloading my [Mama Recipe API](https://github.com/assyifaptrs/food-recipe-api) project, open the file with your text editor (I use Visual Studio Code), then open the terminal and enter :
+- Clone the Repo
+
+```
+  git clone https://github.com/assyifaptrs/mama-recipe-api.git
+```
+
+- Go To Folder Repo
+
+```
+  cd mama-recipe-api
+```
+
+- Install Module
 
 ```
   npm install
 ```
 
-Run the project with :
+- Setup .env
 ```
-  npm run start
+  DB_HOST=
+  DB_USER=
+  DB_PASSWORD=
+  DB_NAME=
+  DB_PORT=
 ```
+
+- Type  ```npm run dev``` To Start Development
+- Type  ```npm run start``` To Start Production
     
 
 ## Features
