@@ -25,10 +25,10 @@ const hitAllRecipe = async (req, res, next) => {
   const id = req.params.id;
   let result;
   try {
-    const product = await client.get(`getFromRedis/${id}`);
+    const recipes = await client.get(`getFromRedis/${id}`);
 
-    if (product) {
-      result = JSON.parse(product);
+    if (recipes) {
+      result = JSON.parse(recipes);
       res.send({
         fromCache: true,
         data: result,
