@@ -41,15 +41,15 @@
 
 This API was built with some technologies below:
 
-**Server :**
+**Server:**
 - Node JS
 - Express JS
 - Redis
 
-**Database :**
+**Database:**
 - pgAdmin4
 
-**Testing API :**
+**Testing API:**
 - Postman
 ## Installation
 
