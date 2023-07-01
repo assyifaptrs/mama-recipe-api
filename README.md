@@ -1,9 +1,43 @@
-# Mama Recipe
+<br/>
+<p align="center">
+  <a href="https://github.com/assyifaptrs/mama-recipe-api">
+    <img src="https://i.postimg.cc/JnsbMGwj/mamarecipe-logo.png" alt="Logo" width="150" height="180">
+  </a>
 
-Discover Recipe & Delicious Food.
+  <h3 align="center">Mama Recipe</h3>
+
+  <p align="center">
+    Discover Recipe & Delicious Food.
+    <br/>
+    <br/>
+    <a href="https://github.com/assyifaptrs/mama-recipe-api"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://github.com/assyifaptrs/mama-recipe-api">View Demo</a>
+    .
+    <a href="https://github.com/assyifaptrs/mama-recipe-api/issues">Report Bug</a>
+    .
+    <a href="https://github.com/assyifaptrs/mama-recipe-api/issues">Request Feature</a>
+  </p>
+</p>
+
+## Table Of Contents
+
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Installation](#installation)
+* [Related Project](#related-project)
+* [Contact](#contact)
 
 ## About The Project
-Mama Recipe is a responsive web-based application that can be accessed on desktop or mobile devices. The app aims for users to find what recipes they need or share their recipes' food to each other.
+
+<p align="center">
+  <img src="https://i.postimg.cc/rs7mJ8QT/mama-recipe-website.png" alt="Logo" width="750" height="400">
+</p>
+
+**Mama Recipe** is a responsive web-based application that can be accessed on desktop or mobile devices. The app aims for users to find what recipes they need or share their recipes food to each other.
+
+## Built With
 
 This API was built with some technologies below:
 
@@ -52,22 +86,16 @@ Install Mama Recipe API with npm :
 - Type  ```npm run dev``` To Start Development
 - Type  ```npm run start``` To Start Production
     
+## Related Project
 
-## Features
+:rocket: [`Backend Mama Recipe`](https://github.com/assyifaptrs/mama-recipe-api)
 
-- Create, Read, Update, Delete
-- Sorting Ascending and Descending
-- Searching by Name/Title
-- Redis
-
-## Related
-
-Take a look at the website's React JS code :
-
-[Mama Recipe App](https://github.com/assyifaptrs/mama-recipe-app)
+:rocket: [`Frontend Mama Recipe`](https://github.com/assyifaptrs/mama-recipe-app)
 
 ## Contact
 
-- My Email : muliaassyifa@gmail.com
+- Email : [`muliaassyifa@gmail.com`](mailto:muliaassyifa@gmail.com)
 
-- Project Link : https://github.com/assyifaptrs/mama-recipe-api
+- LinkedIn : [`/in/assyifa-putri/`](https://www.linkedin.com/in/assyifa-putri/)
+
+- GitHub : [`assyifaptrs`](https://github.com/assyifaptrs)
