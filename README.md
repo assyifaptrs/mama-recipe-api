@@ -84,7 +84,6 @@ Install Mama Recipe API with npm :
   JWT_SECRET =
 ```
 
-- Type  ```npm run dev``` To Start Development
 - Type  ```npm run start``` To Start Production
     
 ## Related Project
