@@ -42,8 +42,8 @@
 This API was built with some technologies below:
 
 **Server:**
-- Node JS
-- Express JS
+- Node.js
+- Express.js
 - Redis
 
 **Database:**
