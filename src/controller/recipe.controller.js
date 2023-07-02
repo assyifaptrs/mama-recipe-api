@@ -25,12 +25,13 @@ const recipeController = {
   },
 
   create: (req, res) => {
-    const { id, title, ingredients, image, video } = req.body;
+    const { id, title, ingredients, video } = req.body;
+    const imagePath = req.files['image'][0].filename;
     const data = {
       id,
       title,
       ingredients,
-      image,
+      image: imagePath,
       video,
     };
     recipeModel
