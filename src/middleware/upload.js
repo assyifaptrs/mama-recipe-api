@@ -1,57 +1,58 @@
-// /* eslint-disable indent */
-const path = require('path');
 const multer = require('multer');
-const crypto = require('crypto');
-const { responseError } = require('../helper/response');
+const path = require('path');
 
-// management file
-const maxSize = 2 * 1024 * 1024;
 const multerUpload = multer({
   storage: multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, './public');
     },
+
     filename: (req, file, cb) => {
-      const name = crypto.randomBytes(30).toString('hex');
       const ext = path.extname(file.originalname);
-      const filename = `${name}${ext}`;
-      cb(null, filename);
+
+      const fileName = `${Date.now()}${ext}`;
+      cb(null, fileName);
     },
   }),
+
   fileFilter: (req, file, cb) => {
-    if (
-      file.mimetype === 'image/png' ||
-      file.mimetype === 'image/jpg' ||
-      file.mimetype === 'image/jpeg' ||
-      file.mimetype === 'image/webp'
-    ) {
+    const ext = path.extname(file.originalname);
+    if (ext == '.png') {
+      cb(null, true);
+    } else if (ext == '.jpeg') {
+      cb(null, true);
+    } else if (ext == '.jpg') {
+      cb(null, true);
+    } else if (ext == '.mp4') {
+      cb(null, true);
+    } else if (ext == '.mov') {
+      cb(null, true);
+    } else if (ext == '.avi') {
+      cb(null, true);
+    } else if (ext == '.svg') {
       cb(null, true);
     } else {
-      cb(
-        { message: 'Image extension only can .jpg, .jpeg, .png and .webp' },
-        false
-      );
+      const error = {
+        message: 'file must be JPG, PNG, SVG, MP4, MOV, or AVI',
+      };
+      cb(error, false);
     }
   },
   limits: {
-    fileSize: maxSize,
+    fileSize: 20000000, // maksimum 20MB
   },
 });
 
-// middleware
+const multerFields = multerUpload.fields([
+  { name: 'image', maxCount: 1 },
+  { name: 'video', maxCount: 1 },
+]);
 const upload = (req, res, next) => {
-  const multerSingle = multerUpload.single('image');
-  multerSingle(req, res, (err) => {
+  multerFields(req, res, (err) => {
     if (err) {
-      let errorMessage = err.message;
-      if (err.code === 'LIMIT_FILE_SIZE') {
-        errorMessage = `File ${err.field} too large, max 2mb`;
-      }
-
-      responseError(res, {
-        code: 400,
-        message: errorMessage,
-        error: 'Upload File Error',
+      res.json({
+        message: 'error when upload file',
+        err,
       });
     } else {
       next();
@@ -60,3 +61,4 @@ const upload = (req, res, next) => {
 };
 
 module.exports = upload;
+
